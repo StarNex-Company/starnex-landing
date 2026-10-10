@@ -247,17 +247,13 @@
 
           <div class="reach">
             <p class="reach-title">Chat with us on WhatsApp</p>
-            <a class="reach-card wa" href="https://wa.me/2349046908664?text=Hello%20StarNex%2C%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">
-              <span class="reach-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3c.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></span>
-              <span><b>+234 904 690 8664</b><small>Projects &amp; general enquiries</small></span><i aria-hidden="true">↗</i>
+            <a class="reach-card wa" href="https://wa.me/2348082951751?text=Hello%20StarNex%2C%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">
+              <span class="reach-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#wa-path"/></svg></span>
+              <span><b>+234 808 295 1751</b><small>Projects &amp; general enquiries</small></span><i aria-hidden="true">↗</i>
             </a>
             <a class="reach-card wa" href="https://wa.me/2347078943383?text=Hello%20StarNex%2C%20I%27d%20like%20to%20discuss%20a%20partnership." target="_blank" rel="noopener">
               <span class="reach-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#wa-path"/></svg></span>
-              <span><b>+234 707 894 3383</b><small>Partnerships</small></span><i aria-hidden="true">↗</i>
-            </a>
-            <a class="reach-card wa" href="https://wa.me/2348082951751?text=Hello%20StarNex%2C%20I%27m%20reaching%20out%20from%20your%20website." target="_blank" rel="noopener">
-              <span class="reach-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#wa-path"/></svg></span>
-              <span><b>+234 808 295 1751</b><small>Support &amp; agriculture</small></span><i aria-hidden="true">↗</i>
+              <span><b>+234 707 894 3383</b><small>Partnerships &amp; agriculture</small></span><i aria-hidden="true">↗</i>
             </a>
             <a class="reach-card mail-card" href="mailto:starcompanytechng@gmail.com?subject=Hello%20StarNex">
               <span class="reach-ico" aria-hidden="true">@</span>
@@ -268,51 +264,52 @@
 
         <div class="form-card reveal">
           <form id="contact-form" novalidate>
-            <h3>Send us a message</h3>
-            <p class="form-sub">Takes about a minute. Fields marked <span class="req">*</span> are required.</p>
+            <div class="form-head">
+              <h3>Send us a message</h3>
+              <p class="form-sub">We reply within one working day.</p>
+            </div>
 
             <fieldset class="reasons">
-              <legend>What are you reaching out about? <span class="req">*</span></legend>
-              <label><input type="radio" name="reason" value="Start a project" checked><span>🚀 Start a project</span></label>
+              <legend class="sr-only">What are you reaching out about?</legend>
+              <label><input type="radio" name="reason" value="Start a project" checked><span>🚀 Project</span></label>
               <label><input type="radio" name="reason" value="Partnership"><span>🤝 Partnership</span></label>
               <label><input type="radio" name="reason" value="Agriculture"><span>🌱 Agriculture</span></label>
-              <label><input type="radio" name="reason" value="General enquiry"><span>💬 General enquiry</span></label>
+              <label><input type="radio" name="reason" value="General enquiry"><span>💬 Other</span></label>
             </fieldset>
 
             <div class="field-row">
               <label class="field"><span>Full name <span class="req">*</span></span><input name="name" type="text" autocomplete="name" maxlength="120" placeholder="Ada Okafor" required></label>
-              <label class="field"><span>Email address <span class="req">*</span></span><input name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@company.com" required></label>
+              <label class="field"><span>Email <span class="req">*</span></span><input name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@company.com" required></label>
             </div>
             <div class="field-row">
               <label class="field"><span>Phone / WhatsApp</span><input name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="+234 800 000 0000"></label>
-              <label class="field"><span>Company or organisation</span><input name="company" type="text" autocomplete="organization" maxlength="120" placeholder="Optional"></label>
+              <label class="field"><span>Service</span>
+                <span class="select"><select name="service">
+                  <option value="">Choose (optional)</option>
+                  <option>App or software development</option>
+                  <option>Website design</option>
+                  <option>Brand identity &amp; logo</option>
+                  <option>Flyers &amp; social media design</option>
+                  <option>SEO &amp; digital marketing</option>
+                  <option>Agriculture &amp; agribusiness</option>
+                  <option>Not sure yet</option>
+                </select></span>
+              </label>
             </div>
-            <label class="field"><span>Which service do you need?</span>
-              <span class="select"><select name="service">
-                <option value="">Choose a service (optional)</option>
-                <option>App or software development</option>
-                <option>Website design</option>
-                <option>Brand identity &amp; logo</option>
-                <option>Flyers &amp; social media design</option>
-                <option>SEO &amp; digital marketing</option>
-                <option>Agriculture &amp; agribusiness</option>
-                <option>Not sure yet</option>
-              </select></span>
-            </label>
-            <label class="field"><span>Your message <span class="req">*</span></span><textarea name="message" rows="5" maxlength="3000" placeholder="Tell us what you have in mind — goals, timeline, budget, anything that helps." required></textarea></label>
+            <label class="field"><span>Your message <span class="req">*</span></span><textarea name="message" rows="3" maxlength="3000" placeholder="Tell us what you have in mind — goals, timeline, budget." required></textarea></label>
             <div class="hp" aria-hidden="true"><label>Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
 
             <p class="form-error" role="alert" hidden></p>
-            <button class="btn btn-gold submit" type="submit"><span class="label-idle">Send message <span aria-hidden="true">↗</span></span><span class="label-busy">Sending…</span></button>
-            <p class="form-note">We only use your details to reply to you.</p>
+            <div class="form-foot">
+              <button class="btn btn-gold submit" type="submit"><span class="label-idle">Send message <span aria-hidden="true">↗</span></span><span class="label-busy">Sending…</span></button>
+              <p class="form-note">🔒 We only use your details to reply.</p>
+            </div>
           </form>
 
           <div class="form-success" hidden tabindex="-1">
             <div class="success-badge" aria-hidden="true">✦</div>
             <h3>Message received!</h3>
             <p>Thank you, <b class="success-name"></b>. Your message is with the StarNex team and we’ll get back to you within one working day.</p>
-            <p class="success-wa-note">Want a faster reply? Send the same message to us on WhatsApp:</p>
-            <a class="btn btn-wa success-wa" href="#" target="_blank" rel="noopener">Send on WhatsApp <span aria-hidden="true">↗</span></a>
             <button class="text-link another" type="button">Send another message</button>
           </div>
         </div>
@@ -321,7 +318,7 @@
     </section>
   </main>
 
-  <a class="wa-float" href="https://wa.me/2349046908664?text=Hello%20StarNex%2C%20I%27m%20reaching%20out%20from%20your%20website." target="_blank" rel="noopener" aria-label="Chat with StarNex on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa-path"/></svg></a>
+  <a class="wa-float" href="https://wa.me/2348082951751?text=Hello%20StarNex%2C%20I%27m%20reaching%20out%20from%20your%20website." target="_blank" rel="noopener" aria-label="Chat with StarNex on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa-path"/></svg></a>
 
   <footer class="footer">
     <div class="wrap footer-inner">

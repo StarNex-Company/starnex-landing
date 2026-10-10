@@ -41,7 +41,6 @@ const FORM_ENTRIES = {
   company: 'entry.1179681495',
   message: 'entry.242056973',
 };
-const WHATSAPP_NUMBER = '2349046908664';
 
 const form = document.getElementById('contact-form');
 const success = document.querySelector('.form-success');
@@ -87,15 +86,7 @@ form.addEventListener('submit', async (e) => {
       // Google does not allow reading the reply (no-cors); a completed request means it was received.
       await fetch(GOOGLE_FORM_ACTION, { method: 'POST', mode: 'no-cors', body });
     }
-    const lines = [
-      'Hello StarNex! I just sent a message from your website.',
-      `Name: ${entry.name}`, `Email: ${entry.email}`,
-      entry.phone ? `Phone: ${entry.phone}` : null, entry.company ? `Company: ${entry.company}` : null,
-      `About: ${entry.reason}`, entry.service ? `Service: ${entry.service}` : null,
-      '', entry.message,
-    ].filter((l) => l !== null);
     success.querySelector('.success-name').textContent = entry.name.split(' ')[0];
-    success.querySelector('.success-wa').href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
     form.hidden = true;
     success.hidden = false;
     success.focus();
