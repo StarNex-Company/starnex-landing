@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="StarNex">
+  <rect width="120" height="120" rx="27" fill="#0B0D18"/>
+  <g transform="translate(14.6 19.7) scale(.7)">
+    <path d="M33.6 28.8a12 12 0 0 0-24 0v69.6a12 12 0 0 0 24 0Z" fill="#FFFFFF"/>
+    <path d="M110.4 72a12 12 0 0 0-24 0v26.4a12 12 0 0 0 24 0Z" fill="#FFFFFF"/>
+    <path d="M21.6 28.8C67.2 28.8 52.8 98.4 98.4 98.4" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+    <path d="M98.4 4.8c1.728 12.96 8.64 19.872 21.6 21.6-12.96 1.728-19.872 8.64-21.6 21.6-1.728-12.96-8.64-19.872-21.6-21.6 12.96-1.728 19.872-8.64 21.6-21.6Z" fill="#F6A93B"/>
+  </g>
+</svg>
