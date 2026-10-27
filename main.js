@@ -1,4 +1,4 @@
-// Nav, mobile menu, reveals, hero sky, scroll effects, work track and footer year.
+// Nav, mobile menu, reveals, hero sky, scroll effects, work track and footer constellation.
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
@@ -169,6 +169,22 @@ vItems.forEach((item) => {
     }
   });
 });
+
+// Footer constellation: each star opens its venture; the horizon brightens on arrival.
+document.querySelectorAll('.c-star').forEach((star) => {
+  star.addEventListener('click', () => {
+    const btn = vItems[Number(star.dataset.venture)]?.querySelector('.v-head');
+    if (btn && btn.getAttribute('aria-expanded') !== 'true') btn.click();
+  });
+});
+const footer = document.querySelector('.footer');
+if ('IntersectionObserver' in window) {
+  new IntersectionObserver(([entry]) => {
+    footer.classList.toggle('dawn-on', entry.isIntersecting);
+  }, { threshold: 0.35 }).observe(footer);
+} else {
+  footer.classList.add('dawn-on');
+}
 
 // Ticker rows drift and speed up with scrolling.
 const tickerRows = [...document.querySelectorAll('.ticker-row')].map((row) => {
