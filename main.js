@@ -170,6 +170,15 @@ vItems.forEach((item) => {
   });
 });
 
+// Links to #top scroll the page back to the very top.
+document.querySelectorAll('a[href="#top"]').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    history.replaceState(null, '', location.pathname + location.search);
+  });
+});
+
 // Footer constellation: each star opens its venture; the horizon brightens on arrival.
 document.querySelectorAll('.c-star').forEach((star) => {
   star.addEventListener('click', () => {
